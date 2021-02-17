@@ -41,3 +41,23 @@ public class Fibonacci_dp
         return f[n];
     }
 }
+
+//Java normal
+import java.util.*;
+public class Fibonacci_recursion
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        long n=0;
+        System.out.println("Enter the number to find the fibonacci number:");
+        n=sc.nextLong();
+        System.out.println(fib(n));
+    }
+    static long fib(long n)
+    {
+       if (n <= 1)
+        return n;
+       return fib(n-1) + fib(n-2);
+    }
+}
